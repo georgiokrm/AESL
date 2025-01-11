@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name Placeholder</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e1e1e, #292929);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .about {
+            padding: 30px;
+            text-align:left;
+            background: #1e1e1e;
+        }
+
+        .about img {
+            
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .course {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+        }
+
+        .course img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .course .info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .course .info h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .course .info button {
+            background: #ff6600;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .course .info button:hover {
+            background: #e65c00;
+        }
+
+        footer {
+            background: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .research-section {
+            text-align: center;
+            padding: 30px;
+            background: #292929;
+        }
+
+        .research-section img {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .research-section button {
+            background: #ff6600;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .research-section button:hover {
+            background: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A.E.S.L</h1>
+        <p>Engineering the future,today!</p>
+    </header>
+
+    <section class="about">
+        <p>Welcome to AESL, the Advanced Electrical Systems Lab,where innovation meets education. We are dedicated to providing hands-on learning experiences in the fields of electronics, digitalization, and electricity. Our mission is to bridge the gap between theoretical knowledge and practical application, offering students, professionals, and even children the opportunity to explore and experiment with real-world technologies.
+            Located in the heart of Beirut, our facility is strategically placed near universities, making it easily accessible for those eager to learn and refresh their skills. The space is equipped with two fully equipped rooms and a dedicated office, designed specifically for scientific research, workshops, and educational programs. Whether you're a student, an adult seeking to enhance your knowledge, or a curious mind looking to dive into the world of electronics, we have something for you.            
+            Our courses and workshops are tailored to meet the needs of all participants, from beginners to advanced learners, ensuring a comprehensive and enriching experience for everyone.
+            Join us as we empower the next generation of innovators and thinkers!
+            
+            </p>
+    </section>
+
+    <section class="courses">
+        <div class="course">
+            <img src="course1.jpg" alt="Course 1">
+            <div class="info">
+                <h2>Build Your Own Toys</h2>
+                <a href="course1_details.html"><button>Enroll Now</button></a>
+            </div>
+        </div>
+        <div class="course">
+            <img src="course2.jpg" alt="Course 2">
+            <div class="info">
+                <h2>Logic circuit design</h2>
+                <a href="course2_details.html"><button>Enroll Now</button></a>
+            </div>
+        </div>
+        <div class="course">
+            <img src="course3.jpg" alt="Course 3">
+            <div class="info">
+                <h2>Advanced Electronics</h2>
+                <a href="course3_details.html"><button>Enroll Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="research-section">
+        <h2>Research Opportunities</h2>
+        <img src="research.jpg" alt="Research Labs">
+        <p>Our labs are open for PhD researchers to conduct cutting-edge experiments and studies. Explore our facilities and find the right environment for your research.</p>
+        <a href="research_details.html"><button>Explore Pricing & Facilities</button></a>
+    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:contact@company.com">contact@company.com</a></p>
+        <p>Follow us on social media: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
